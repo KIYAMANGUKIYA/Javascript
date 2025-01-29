@@ -513,3 +513,313 @@ console.log(iterator1.next().value)
 console.log(iterator1.next().value)
 console.log(iterator1.next().value)
 
+//JS Math Object :
+
+console.log("PI Value:");  
+console.log(Math.PI);
+
+console.log("Math Round:"); //Math.Round(x) Returns the nearest integer..
+console.log(Math.round(2.5));
+
+console.log("Math.Ceil:"); //Math.ceil(x) returns the value of x rounded up to its nearest integer
+console.log(Math.ceil(3.6));
+
+console.log("Math.floor:"); //Math.floor(x) returns the value of x rounded down to its nearest integer
+console.log(Math.floor(3.6));
+
+console.log("Math.trunc:"); //Math.trunc(x) returns the integer part of x
+console.log(Math.trunc(4.8));
+
+console.log("Math.sign:"); //Math.sign(x) returns if x is negative, null or positive
+console.log(Math.sign(4));
+
+console.log("Math.Pow:"); //Math.pow(x, y) returns the value of x to the power of y
+console.log(Math.pow(2,4));
+
+console.log("Math.sqrt:"); // Math.sqrt(x) returns the square root of x
+console.log(Math.sqrt(64));
+
+console.log("Math.abs:") //Math.abs(x) returns the absolute (positive) value of x
+console.log(Math.abs(-4.7));
+
+//Math.min() and Math.max() :-
+//Math.min() and Math.max()can be used to find the lowest or highest value in a list of arguments.
+console.log("Min value:");
+console.log(Math.min(0, 150, 30, 20, -8, -200));
+console.log("Max Value:");
+console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+console.log("Math.random:"); //Math.random() returns a random number between 0 and 1..
+console.log(Math.random());
+
+console.log("Math.log:"); //Math.log(x) returns the natural logarithm of x
+console.log(Math.log(4));
+
+// The Boolean Function:
+console.log("Boolean Function:");
+console.log(10 > 7);
+
+// COMPARISON OPERATOR :-
+let x = 5;
+console.log("== operator:");
+console.log(x==5);
+console.log(x=="5");
+
+console.log("=== operator:");
+console.log(x===5);
+console.log(x==="5");
+
+console.log("!= operator:");
+console.log(x != 7);
+
+console.log("!== operator:");
+console.log(x !== 5);
+console.log(x !== "5");
+console.log(x !== 7);
+
+console.log("> operator:");
+console.log(x > 3);
+
+console.log("< operator:");
+console.log(x < 10);
+
+console.log(">= operator:");
+console.log(x >= 4);
+
+console.log("<= operator:");
+console.log(x <= 3);
+
+// LOGICAL OPERATOR :
+let p = 6;
+let q = 3;
+console.log("&& operator:");
+console.log(p < 10 && q > 1);
+
+console.log("|| operator:");
+console.log(p == 5 || q == 5);
+
+console.log("! operator:");
+console.log(!(p == q));
+
+// THE IF STATEMENT :
+console.log("IF-ELSE STATEMENT:");
+let age = 18;
+if (age >= 18)
+{
+  console.log("You are eligible for voting");
+}
+else
+{
+  console.log("You are not eligible for voting");
+}
+
+// IF-ELSE IF STATEMENT :-
+console.log("IF/ELSE-IF STATEMENT:");
+let score = 85;
+if (score >= 90)
+{
+  console.log("GRADE A");
+}
+else if (score >= 80)
+{
+  console.log("GRADE B");
+}
+else if (score >= 70)
+{
+  console.log("GRADE C");
+}
+else if (score >= 60)
+{
+  console.log("GRADE D");
+}
+else if (score >= 50)
+{
+  console.log("GRADE E");
+}
+else
+{
+  console.log("GRADE F");
+}
+
+//Break statement
+// for(let i=0;i<=10;i++){
+//     if(i==7){
+//         break
+//     }
+//     console.log(i)
+// }
+
+// //Continue statement
+// for(let j=1;j<=9;j++){
+//     if(j==4){
+//         continue;
+//     }
+//     console.log(j);
+// }
+
+// JAVASCRIPT SETS :
+//Set method
+//Create a set
+//const letters = new Set(["a","b","c","d"])
+//console.log(letters)
+
+//Add value to set
+// const letter = new Set()
+// letter.add("a")
+// letter.add("b")
+// letter.add("c")
+// letter.add("d")
+// console.log(letter)
+
+// //listing the elements
+// let text= ""
+// for(let x of letter){
+//     text += x
+// }
+
+//Map:-
+
+// const fruits = new Map([
+//     ["apples",500],
+//     ["bananas",300],
+//     ["oranges",200]
+// ])
+// console.log(fruits)
+
+// get method
+// console.log(fruits.get("bananas"))
+
+// set method
+// const fruit=new Map()
+// fruit.set("berries",500)
+// fruit.set("starwberry",300)
+// fruit.set("kiwi",100)
+// console.log(fruit)
+
+// size method
+// console.log(fruit.size)
+
+// delete method
+// console.log(fruit.delete("kiwi"))
+// console.log(fruit)
+
+// typeOf :-
+// console.log("TYPE OF:-");
+// console.log(typeof "John");
+// console.log(typeof 5);
+// console.log(typeof 2.2);
+// console.log(typeof true);
+
+//  JS Destructing :
+
+let arrr = [3,5,8,9,12,124];
+let {l,b} = {l:1,b:5};
+let arrr1 = [3,5,8];
+let obj = {...arr1};
+console.log(obj);
+function summ(v1,v2,v3) {
+  return v1+v2+v3
+}
+console.log(summ(...arrr1));
+
+let obj1 = {
+  name: "Hetvi",
+  company: "Toshal Infotech",
+  address: "vesu"
+}
+
+console.log({...obj1,name:"Kiya",company:"Odan Infotech"});
+
+//JS REGULAR EXPRESSION :
+
+// let text = "Visit W3Schools!";//Using String search() With a String
+// let k = text.search("W3Schools");
+// console.log(k);
+
+// let text1 = "Visit W3Schools";
+// let h = text.search(/w3schools/i); //Using String search() With a Regular Expression
+// console.log(h);
+
+// let text2 = "Visit Microsoft!";
+// let result = text.replace("Microsoft", "W3Schools"); //Using String replace() With a String
+// console.log(result);
+
+// const pattern = /i/; // Using test()
+// console.log(pattern.test("The best things in life are free!"));
+
+// const pattern1 = /e/; //Using exec()
+// console.log(pattern1.exec("The best things in life are free!"));
+
+//this keyword :-
+console.log("this KeyWord:");
+const person3 = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person3);
+
+//java script object literal
+//  create a object
+console.log("Creating a Object:");
+const persons = new Object();
+
+//Add properties
+persons.firstName = "Zeel";
+persons.lastName = "Patel";
+persons.age = 20;
+persons.hobby = "Dancing";
+persons.college = "SRKI";
+
+console.log(persons);
+
+//Object Constructor Functions
+//create a object
+console.log("Object Constructor Functions:");
+function persons1(name, age, city) {
+  this.name = name;
+  this.age = age;
+  this.city = city;
+}
+const object = new persons1("Hetvi", 21, "Surat");
+console.log(object);
+
+//Object.defineProperty()
+console.log("Get/Set Method:");
+
+const obj2 = {counter : 0};
+
+// Define setters and getters
+Object.defineProperty(obj2, "reset", {
+  get : function () {this.counter = 0;}
+});
+Object.defineProperty(obj2, "increment", {
+  get : function () {this.counter++;}
+});
+Object.defineProperty(obj2, "decrement", {
+  get : function () {this.counter--;}
+});
+Object.defineProperty(obj2, "add", {
+  set : function (value) {this.counter += value;}
+});
+Object.defineProperty(obj2, "subtract", {
+  set : function (value) {this.counter -= value;}
+});
+
+// Play with the counter:
+obj2.reset;
+obj2.add = 5;
+obj2.subtract = 1;
+obj2.increment;
+obj2.decrement;
+console.log(obj2);
+
+// Function Declarations :-
+console.log("Function Declaration:-");
+const add = function(a, b) {
+  return a + b;
+};
+console.log(add(10,20));
